@@ -1,0 +1,35 @@
+q<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính lãi ngân hàng</title>
+</head>
+<body>
+    <h3>tính lãi ngân hàng(9,6%/năm)</h3>
+    <label>nhập số tiền cần vay(triệu)</label><br>
+    <input type="number" id="tien"><br>
+    <label>nhập thời gian vay(tháng)</label><br>
+    <input type="number" id="thang"><br>
+
+    <button type="button" onclick="kiemTra()">tính lãi</button>
+
+    <script>
+        function kiemTra() {
+        let tienVon = parseInt(document.getElementById('tien').value);
+        let thang = parseInt(document.getElementById('thang').value);
+        let vesau = tienVon;
+
+        let tDau = tienVon *(1 + 0.08/thang*(thang)) + tienVon;
+
+        for (let i=1; i<=thang; i++){
+            let lai = vesau * 0.8/100;
+            vesau += lai;
+            document.write(' tháng' + i + ' lãi = ' + lai, ' tổng tiền = ' + vesau + "<br>");
+        }
+        document.write('')
+        }
+    </script>
+</body>
+
+
+</html>

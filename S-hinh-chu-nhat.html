@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích hình chữ nhật</title>
+</head>
+<body>
+    <h2>tính diện tích hình chữ nhật</h2>
+
+    <input placeholder="nhập cạnh a" type="text" id="dai"></br><br>
+    <input placeholder="nhập cạnh b" type="text" id="rong"></br><br>
+    <button type="button" onclick="tinh()">tính diện tích</button>
+
+    <script>
+      function tinh() {
+        let r = document.getElementById('rong').value;
+        let d = document.getElementById('dai').value;
+        let s = Number(d) * Number(r);
+        document.write('diện tích hình chự nhật là: ' + s);
+      }
+</script>
+
+</body>
+</html>

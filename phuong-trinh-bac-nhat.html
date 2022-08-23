@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phương trình bậc 1</title>
+</head>
+<body>
+    <label>ta có phương trình bậc nhất ax + b = 0</label><br>
+    <input placeholder="nhập a" type="text" id="soA"></br><br>
+    <input placeholder="nhập b" type="text" id="soB"></br><br>
+    <button type="button" onclick="tinh()">kq của phương trình</button>
+
+    <script>
+      function tinh() {
+        let a = parseInt(document.getElementById('soA').value);
+        let b = parseInt(document.getElementById('soB').value);
+        let x = null;
+
+            if(a=0) {
+                if (b=0) {
+                    x = 'VSN';
+                }else{
+                    x = 'VN'
+                }
+            }else {
+                x = -b/a;
+            }
+        document.write('kết quả của phương trình trên (x) là: ' + x);
+      }
+    </script>
+</body>
+</html>

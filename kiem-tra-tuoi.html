@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tuổi</title>
+</head>
+<body>
+    <input placeholder="nhập số tuổi" type="number" id="tuoi">
+
+    <input type="button" onclick="kiemTra()" value="kiểm tra">
+
+
+    <script>
+      function kiemTra() {
+        let tuoi = parseInt(document.getElementById('tuoi').value);
+
+        let disPlay = (tuoi < 120 && tuoi >0)? tuoi : 'bạn sống hơi bị lâu r đấy';
+
+        document.write('thuế của bạn la: ' + disPlay);
+      }
+    </script>
+
+
+</body>
+</html>

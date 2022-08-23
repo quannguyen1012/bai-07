@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích hình vuông</title>
+</head>
+<body>
+    <h2>Tính diện tích hình vuông</h2>
+
+    <input placeholder="nhập cạnh a đã biết" type="text" id="dTHinhVuong"></br><br>
+    <button type="button" onclick="dT()">Tính diện tích</button>
+
+    <script>
+      function dT() {
+        let a = document.getElementById('dTHinhVuong').value;
+        let dT = Number(a) * Number(a);
+        document.write('diện tích hình vuông là: ' + dT);
+      }
+    </script>
+</body>
+</html>

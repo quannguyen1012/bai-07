@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích hình tam giác</title>
+</head>
+<body>
+
+    <h2>tính diện tích hình tam giác</h2>
+
+    <input placeholder="nhập cạnh kề a" type="text" id="ke"></br><br>
+    <input placeholder="nhập cạnh kề b" type="text" id="doi"></br><br>
+    <button type="button" onclick="tinh()">tính diện tích</button>
+
+    <script>
+      function tinh() {
+        let a = document.getElementById('ke').value;
+        let b = document.getElementById('doi').value;
+        let s = (Number(a) * Number(b))/2;
+        document.write('diện tích hình tam giác vuông là: ' + s);
+      }
+    </script>
+
+</body>
+</html>

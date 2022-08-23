@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra</title>
+</head>
+<body>
+    <h3>kiểm tra xem có phải canhr của 1 tam giác</h3>
+    <input placeholder="nhập cạnh a" type="number" id="cA">
+    <input placeholder="nhập cạnh b" type="number" id="cB">
+    <input placeholder="nhập cạnh c" type="number" id="cC">
+
+    <input type="button" onclick="kiemTra()" value="kiểm tra">
+
+    <script>
+        function kiemTra() {
+            let a = parseInt(document.getElementById('cA').value);
+            let b = parseInt(document.getElementById('cB').value);
+            let c = parseInt(document.getElementById('cC').value);
+
+            if (a>0 && b>0 && c>0 && a + b > c && b + c > a && a + c > b){
+                document.write('a, b, c là cạnh của mot tam giác');
+
+            }else{
+                document.write('bạn nhập sai j đó rồi hãy thử lại');
+            }
+        }
+    </script>
+</body>
+</html>
